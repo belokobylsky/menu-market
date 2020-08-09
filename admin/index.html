@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/3e33078cb7.js" crossorigin="anonymous"></script>
+    <title>Menu market</title>
+</head>
+<body class="m-not-r row">
+    <svg width="0" height="0" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="like-svg">
+            <g clip-path="url(#clip0)">
+            <path d="M2.83016 5.53003H1.37535C0.602922 5.53003 -0.0253983 6.15835 -0.0253983 6.93068V11.0102C-0.0253983 11.7825 0.602922 12.4109 1.37535 12.4109H2.83016V5.53003Z"/>
+            <path d="M11.5739 4.71423H8.07932V2.03552C8.07932 1.26309 7.451 0.634766 6.67867 0.634766H5.8628C5.09037 0.634766 4.46205 1.26309 4.46205 2.03552V3.73759L3.59192 4.82522V12.411H9.53423C10.2318 12.411 11.0435 11.9333 11.3822 11.3235L12.4314 9.43502C12.736 8.88674 12.9747 7.96593 12.9747 7.3387V6.11489C12.9747 5.34255 12.3463 4.71423 11.5739 4.71423Z"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="13" height="13" fill="white"/>
+            </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="dislike-svg">
+            <g clip-path="url(#clip1)">
+            <path d="M2.83016 7.46997H1.37535C0.602922 7.46997 -0.0253983 6.84165 -0.0253983 6.06932V1.98985C-0.0253983 1.21752 0.602922 0.589096 1.37535 0.589096H2.83016V7.46997Z"/>
+            <path d="M11.5739 8.28577H8.07932V10.9645C8.07932 11.7369 7.451 12.3652 6.67867 12.3652H5.8628C5.09037 12.3652 4.46205 11.7369 4.46205 10.9645V9.26241L3.59192 8.17478V0.589019H9.53423C10.2318 0.589019 11.0435 1.06668 11.3822 1.67645L12.4314 3.56498C12.736 4.11326 12.9747 5.03407 12.9747 5.6613V6.88511C12.9747 7.65745 12.3463 8.28577 11.5739 8.28577Z"/>
+            </g>
+            <defs>
+            <clipPath id="clip1">
+            <rect width="13" height="13" fill="white" transform="matrix(1 0 0 -1 0 13)"/>
+            </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="order-menu-svg">
+            <circle cx="1.60001" cy="1.6" r="1.6" transform="rotate(90 1.60001 1.6)" fill="#D7D7D7"/>
+            <circle cx="1.60001" cy="8.00002" r="1.6" transform="rotate(90 1.60001 8.00002)" fill="#D7D7D7"/>
+            <circle cx="1.60001" cy="14.4" r="1.6" transform="rotate(90 1.60001 14.4)" fill="#D7D7D7"/>
+        </symbol>
+    </svg>
+
+
+    <div class="menu">
+        <a href="#" class="logo-link block">
+            <img src="../img/logo.png" alt="Menu market">
+        </a>
+        <div class="menu__profile row ai-center">
+            <img src="../img/profile_photo.png" alt="Photo">
+            <h3 class="profile-name">Company name</h3>
+        </div>
+
+        <nav class="menu__navigation">
+            <p class="nav-item current">
+                <span><i class="fas fa-home"></i></span>
+                Главная
+            </p>
+            <a href="orders.html" class="nav-item">
+                <span><i class="fas fa-shopping-cart"></i></span>
+                Заказы
+            </a>
+            <a href="products.html" class="nav-item">
+                <span><i class="fas fa-utensils"></i></span>
+                Товары
+            </a>
+            <a href="settings.html" class="nav-item">
+                <span><i class="fas fa-cog"></i></span>
+                Настройки
+            </a>
+        </nav>
+    </div>
+    <main class="main bg-rather-white round-left-big">
+        <header class="row jc-between ai-center">
+            <h1 class="big-head-text">Главная</h1>
+            <div class="info row">
+                <p class="main__username text-name">Лена Шнайдер</p>
+                <button class="main-button with-tooltip" aria-describedby="tooltip">
+                    <img src="../img/notification.svg" alt="Уведомления">
+                </button>
+                <div class="tooltip header__tooltip" role="tooltip">
+                    <div class="row">
+                        <img src="../img/products/pizza-mazarella.png" alt="" class="tooltip__thumb">
+                        <div>
+                            <p class="small-text marked-light">Новый заказ!</p>
+                            <p class="smallest-text">1 х Пицца «Мацарелла», 1 х Бутерброды с авокадо и ...</p>
+                        </div>
+                        <button class="tooltip__close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="arrow" data-popover-arrow></div>
+                </div>
+                <button class="main-button">
+                    <img src="../img/logout.svg" alt="Выход">
+                </button>
+            </div>
+        </header>
+        <div class="container container-hello">
+            <div class="main__hello item">
+                <h2 class="medium-head-text">Добро пожаловать!</h2>
+                <p class="text-name thin">Пожалуйста, заполните данные аккаунта для дальнейшей работы.</p>
+                <a href="second-index.html" class="btn bg-success text-name">Заполнить данные</a>
+            </div>
+            <div class="main__rates item">
+                <h3 class="small-head-text dark">Отзывы</h3>
+                <ul class="rates-list">
+                    <li class="rates-item disabled">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Аскар</p>
+                            <p class="rates-item__info">№12</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">15 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#like-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="rates-item">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Аида</p>
+                            <p class="rates-item__info">№46</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">12 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#like-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="rates-item">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Евгений</p>
+                            <p class="rates-item__info">№32</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">11 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#dislike-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="rates-item">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Мира</p>
+                            <p class="rates-item__info">№25</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">9 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#like-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="rates-item">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Данияр</p>
+                            <p class="rates-item__info">№17</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">9 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#like-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="rates-item">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Антон</p>
+                            <p class="rates-item__info">№78</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">7 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#like-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="rates-item">
+                        <div class="row jc-between">
+                            <p class="rates-item__username">Наталья</p>
+                            <p class="rates-item__info">№54</p>
+                        </div>
+                        <p class="block rates-item__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                        </p>
+                        <div class="row jc-between">
+                            <p class="rates-item__info">7 июля, 2020, 12:30</p>
+                            <p class="rates-item__rate">
+                                <svg viewBox="0 0 13 13">
+                                    <use xlink:href="#like-svg"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__orders item">
+                <h3 class="small-head-text dark">Заказы</h3>
+                <table class="orders-table">
+                    <tr>
+                        <th>№</th>
+                        <th>Принят</th>
+                        <th>Выполнен</th>
+                        <th>Сумма</th>
+                        <th>Способ оплаты</th>
+                        <th colspan="2">Статус </th>
+                    </tr>
+                    <tr>
+                        <th>68</th>
+                        <td>12:04</td>
+                        <td>...</td>
+                        <td>5 100 тг</td>
+                        <td>Карта</td>
+                        <td><span class="status-marked">Выполняется</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>67</th>
+                        <td>11:58</td>
+                        <td>...</td>
+                        <td>3 500 тг</td>
+                        <td>Наличные</td>
+                        <td><span class="status-marked">Выполняется</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>66</th>
+                        <td>11:42</td>
+                        <td>12:35</td>
+                        <td>7 800 тг</td>
+                        <td>Карта</td>
+                        <td><span class="status-success">Выполнен</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>65</th>
+                        <td>11:38</td>
+                        <td>12:23</td>
+                        <td>4 500 тг</td>
+                        <td>Наличные</td>
+                        <td><span class="status-success">Выполнен</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>64</th>
+                        <td>10:48</td>
+                        <td>11:34</td>
+                        <td>2 400 тг</td>
+                        <td>Карта</td>
+                        <td><span class="status-grey">Отменён</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>63</th>
+                        <td>10:44</td>
+                        <td>11:32</td>
+                        <td>8 400 тг</td>
+                        <td>Наличные</td>
+                        <td><span class="status-success">Выполнен</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>62</th>
+                        <td>10:41</td>
+                        <td>11:24</td>
+                        <td>3 700 тг</td>
+                        <td>Наличные</td>
+                        <td><span class="status-success">Выполнен</span></td>
+                        <td>
+                            <button class="with-tooltip" aria-describedby="tooltip">
+                                <svg viewBox="0 0 4 16">
+                                    <use xlink:href="#order-menu-svg"/>
+                                </svg>
+                            </button>
+                            <div class="tooltip" role="tooltip">
+                                <a href="order.html">Подробнее</a>
+                                <a href="#">Удалить</a>
+                                <div class="arrow" data-popover-arrow></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

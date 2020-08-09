@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/3e33078cb7.js" crossorigin="anonymous"></script>
+    <title>Menu market</title>
+</head>
+<body class="m-not-r row">
+    <svg width="0" height="0" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="order-menu-svg">
+            <circle cx="1.60001" cy="1.6" r="1.6" transform="rotate(90 1.60001 1.6)" fill="#D7D7D7"/>
+            <circle cx="1.60001" cy="8.00002" r="1.6" transform="rotate(90 1.60001 8.00002)" fill="#D7D7D7"/>
+            <circle cx="1.60001" cy="14.4" r="1.6" transform="rotate(90 1.60001 14.4)" fill="#D7D7D7"/>
+        </symbol>
+    </svg>
+
+
+    <div class="menu">
+        <a href="#" class="logo-link block">
+            <img src="../img/logo.png" alt="Menu market">
+        </a>
+        <div class="menu__profile row ai-center">
+            <img src="../img/profile_photo.png" alt="Photo">
+            <h3 class="profile-name">Company name</h3>
+        </div>
+
+        <nav class="menu__navigation">
+            <a href="second-index.html" class="nav-item">
+                <span><i class="fas fa-home"></i></span>
+                Главная
+            </a>
+            <a href="orders.html" class="nav-item">
+                <span><i class="fas fa-shopping-cart"></i></span>
+                Заказы
+            </a>
+            <a href="products.html" class="nav-item">
+                <span><i class="fas fa-utensils"></i></span>
+                Товары
+            </a>
+            <p class="nav-item current">
+                <span><i class="fas fa-cog"></i></span>
+                Настройки
+            </p>
+        </nav>
+    </div>
+    <main class="main bg-rather-white round-left-big">
+        <header class="row jc-between ai-center">
+            <h1 class="big-head-text">Настройки</h1>
+            <div class="info row">
+                <p class="main__username text-name">Лена Шнайдер</p>
+                <button class="main-button with-tooltip" aria-describedby="tooltip">
+                    <img src="../img/notification.svg" alt="Уведомления">
+                </button>
+                <div class="tooltip header__tooltip" role="tooltip">
+                    <div class="row">
+                        <img src="../img/products/pizza-mazarella.png" alt="" class="tooltip__thumb">
+                        <div>
+                            <p class="small-text marked-light">Новый заказ!</p>
+                            <p class="smallest-text">1 х Пицца «Мацарелла», 1 х Бутерброды с авокадо и ...</p>
+                        </div>
+                        <button class="tooltip__close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="arrow" data-popover-arrow></div>
+                </div>
+                <button class="main-button">
+                    <img src="../img/logout.svg" alt="Выход">
+                </button>
+            </div>
+        </header>
+        <div class="container container-settings">
+            <div class="main__tariff item grid">
+                <div class="item">
+                    <h3 class="small-head-text dark">Тарифный план</h3>
+                    <div class="row jc-between">
+                        <p class="text-name def-weight">
+                            Оплата в месяц <br>
+                            <span class="success">
+                                8 990 тг
+                            </span> 
+                        </p>
+                        <div class="row ai-center">
+                            <p>До 25.08.2020</p>
+
+                            <button class="main__update-tariff">
+                                <img src="../img/update.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <a href="tariff.html" class="main__tariff-plan_btn btn">
+                        <span>Поменять план</span> <i class="fas fa-chevron-right"></i>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <h3 class="small-head-text dark">Кол-во заказов</h3>
+                    <select class="input currency">
+                        <option value="KZT">KZT - Тенге</option>
+                        <option value="RUB">RUB - Рубль</option>
+                        <option value="UAH">UAH - Гривна</option>
+                    </select>
+                    <button class="btn bg-success text-name">Редактировать</button>
+
+                </div>
+            </div>
+            <div class="main__personal item">
+                <h3 class="small-head-text">Персональные данные</h3>
+
+                <form action="" class="main__personal-data def-weight dark">
+                    <br>
+                    <h4 class="text-name">Основая информация</h4>
+                    <br>
+                    <div class="row main__main-personal-info">
+                        <div class="form-group">
+                            <label for="company-name">Имя компании</label>
+                            <input type="text" autocomplete="name" id="company-name" class="input" value="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="input" value="lenashnider@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="file" class="file row ai-center">
+                                <img src="../img/file-label.svg" alt="Загрузить фото">
+                                <p class="main-thin">Добавьте логотип компании</p>
+                            </label>
+                            <input type="file" id="file" hidden>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефона</label>
+                            <input type="tel" id="phone" class="input" value="+7 701 412 56 56">
+                        </div>
+                        <div class="form-group">
+                            <label for="domen">Доменное имя вашего сайта</label>
+                            <input type="text" id="domen" class="input" value="Legusto.menu.market">
+                        </div>
+                    </div>
+
+                    <hr class="hr">
+
+                    <h4 class="text-name">Основая информация</h4>
+                    <div class="row main__main-personal-info">
+                        <div class="form-group">
+                            <label for="instagram">Инстаграм</label>
+                            <input type="text" id="instagram" class="input" placeholder="@">
+                        </div>
+                        <div class="form-group">
+                            <label for="vk">ВКонтакте</label>
+                            <input type="text" id="vk" class="input" value="Legusto">
+                        </div>
+                    </div>
+
+                    <hr class="hr">
+
+                    <h4 class="text-name">Настройки входа</h4>
+                    <div class="row main__main-personal-info">
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password" class="input" value="••••••••">
+                            <a href="#" class="change-password">Сменить пароль</a>
+                        </div>
+                    </div>
+                    <button class="btn def-weight bg-success" type="submit">Редактировать</button>
+                </form>
+            </div>
+            <div class="main__policy grid item">
+                <div class="item">
+                    <h3 class="small-head-text">Настройки доставки</h3>
+                    <form action="" class="main__delivery">
+                        <h4 class="text-name">Цена за доставку</h4>
+                        <table>
+                            <tr>
+                                <td>До</td>
+                                <td class="with-input"><input type="number" class="input small-input"></td>
+                                <td>тг</td>
+                                <td>Доставка</td>
+                                <td class="with-input"><input type="number" class="input small-input" value="500"></td>
+                                <td>тг</td>
+                            </tr>
+                            <tr>
+                                <td>Свыше</td>
+                                <td class="with-input"><input type="number" class="input small-input"></td>
+                                <td>тг</td>
+                                <td>Доставка</td>
+                                <td class="with-input"><input type="number" class="input small-input" value="0"></td>
+                                <td>тг</td>
+                            </tr>
+                        </table>
+                        <h4 class="text-name">Время доставки</h4>
+                        <input type="number" value="60" class="input small-input"> мин
+                        <h4 class="text-name">Скидка</h4>
+                        <table>
+                            <tr>
+                                <td>Сумма выше</td>
+                                <td class="with-input"><input type="number" class="input small-input"></td>
+                                <td>тг</td>
+                                <td class="with-input"><input type="number" class="input small-input" value="500"></td>
+                                <td>тг</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <button class="btn def-weight bg-rather-white">Отменить</button>
+                        <button class="btn def-weight bg-success">Сохранить</button>
+                    </form>
+                </div>
+                <div class="item">
+                    <h3 class="small-head-text">Настройки доставки</h3>
+                    <p class="main__delivery-settings">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <p class="main__delivery-settings">
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p class="main__delivery-settings">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                    </p>
+                    <p class="main__delivery-settings">
+                        Richard McClintock, a Latin professor at Hampden-Sydney College. Virginia, looked up one of the more obscure Latin words, consectetur.
+                    </p>
+                    <p class="main__delivery-settings">
+                        Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through.
+                    </p>
+                    <br>
+                    <button class="btn def-weight bg-success">Редактировать</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

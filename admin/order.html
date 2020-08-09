@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/3e33078cb7.js" crossorigin="anonymous"></script>
+    <title>Menu market | Заказы</title>
+</head>
+<body class="m-not-r row">
+
+
+    <div class="menu">
+        <a href="#" class="logo-link block">
+            <img src="../img/logo.png" alt="Menu market">
+        </a>
+        <div class="menu__profile row ai-center">
+            <img src="../img/profile_photo.png" alt="Photo">
+            <h3 class="profile-name">Company name</h3>
+        </div>
+
+        <nav class="menu__navigation">
+            <a href="second-index.html" class="nav-item">
+                <span><i class="fas fa-home"></i></span>
+                Главная
+            </a>
+            <p class="nav-item current">
+                <span><i class="fas fa-shopping-cart"></i></span>
+                Заказы
+            </p>
+            <a href="products.html" class="nav-item">
+                <span><i class="fas fa-utensils"></i></span>
+                Товары
+            </a>
+            <a href="settings.html" class="nav-item">
+                <span><i class="fas fa-cog"></i></span>
+                Настройки
+            </a>
+        </nav>
+    </div>
+    <main class="main bg-rather-white round-left-big">
+        <header class="row jc-between ai-center">
+            <h1 class="big-head-text">Заказ 69</h1>
+            <div class="info row ai-center">
+                <p class="search">
+                    <input type="text" placeholder="Поиск..." class="search input">
+                </p>
+                <p class="main__username text-name">Катя Крегер</p>
+                <button class="main-button with-tooltip" aria-describedby="tooltip">
+                    <img src="../img/notification.svg" alt="Уведомления">
+                </button>
+                <div class="tooltip header__tooltip" role="tooltip">
+                    <div class="row">
+                        <img src="../img/products/pizza-mazarella.png" alt="" class="tooltip__thumb">
+                        <div>
+                            <p class="small-text marked-light">Новый заказ!</p>
+                            <p class="smallest-text">1 х Пицца «Мацарелла», 1 х Бутерброды с авокадо и ...</p>
+                        </div>
+                        <button class="tooltip__close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="arrow" data-popover-arrow></div>
+                </div>
+                <button class="main-button">
+                    <img src="../img/logout.svg" alt="Выход">
+                </button>
+            </div>
+        </header>
+        <a href="orders.html" class="text-back">
+            <i class="fas fa-chevron-left"></i> Все заказы
+        </a>
+        <div class="container container-orders">
+            <div class="main__orders main__order item">
+                <table class="main__order-table">
+                    <tr>
+                        <th>Дата заказа</th>
+                        <td>30.07.2020</td>
+                    </tr>
+                    <tr>
+                        <th>ФИО</th>
+                        <td>Евгений Иванов</td>
+                    </tr>
+                    <tr>
+                        <th>Номер телефона</th>
+                        <td>+7 701 782 66 77</td>
+                    </tr>
+                    <tr>
+                        <th>Адрес</th>
+                        <td>ул. Камзина, 82, кв. 44, 2 п, 5 эт</td>
+                    </tr>
+                    <tr>
+                        <th>Комментарий</th>
+                        <td>Суши на две персоны</td>
+                    </tr>
+                    <tr>
+                        <th>Оплата</th>
+                        <td>Наличными</td>
+                    </tr>
+                    <tr>
+                        <th>Купюра</th>
+                        <td>10 000 тг</td>
+                    </tr>
+                    <tr>
+                        <th>Время оплаты</th>
+                        <td>11:31</td>
+                    </tr>
+                </table>
+
+                <table class="main__order-about">
+                    <tr>
+                        <th>№</th>
+                        <th>Принят</th>
+                        <th>Выполнен</th>
+                        <th>Заказ</th>
+                        <th>Количество</th>
+                        <th>Цена</th>
+                        <th>Сумма</th>
+                        <th>Бонус</th>
+                    </tr>
+                    
+                    <tr>
+                        <th>62</th>
+                        <td>10:44</td>
+                        <td>11:32</td>
+                        <td class="main__order-prods">
+                            <img src="../img/products/meat.png" alt="">
+                            Свинные ребрышки с овощами
+                        </td>
+                        <td>2</td>
+                        <td>2 050 тг</td>
+                        <td class="def-weight">8 400 тг</td>
+                        <td>168 тг</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td class="main__order-prods">
+                            <img src="../img/products/fast-food.png" alt="">
+                            Гамбургер
+                        </td>
+                        <td>1</td>
+                        <td>1 500 тг</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td class="main__order-prods">
+                            <img src="../img/products/pasta.png" alt="">
+                            Паста с овощами и острым соусом
+                        </td>
+                        <td>1</td>
+                        <td>2 800 тг</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </table>
+                <a href="javascript:history.back(1)" class="btn bg-success text-name">Закрыть</a>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
